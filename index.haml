@@ -2,6 +2,16 @@
 %html
   %head
     %title= "Google Book API AutoComplete"
+    %script{:type => "text/javascript",
+            :src => "js/jquery-1.6.1.min.js"}
+
+    %script{:type => "text/javascript",
+      :src => "js/jquery-ui-1.8.14.custom.min.js"}
+
+    %link{:type => "text/css",
+      :rel => "stylesheet",
+      :href => "css/ui-lightness/jquery-ui-1.8.14.custom.css"}
+
   %body
     %p= "This web page will show autocompletion of book names from the Google Book API"
-    %input{:type => "text", :id => "book-input"}
+    %input#book-input{:type => "text"}
